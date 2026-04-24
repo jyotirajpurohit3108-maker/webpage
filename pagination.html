@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            .pagination{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                
+
+            }
+            .pagination li a{
+                display: block;
+                text-decoration: none;
+                border: 1px solid gray;
+                padding: 8px 12px;
+                color: black; 
+                margin: 0 4px; 
+                border-radius: 5px;
+            }
+            .pagination li a.active {
+  background-color:green;
+  color: aliceblue;
+  }
+
+        </style>
+    </head>
+    <body>
+
+        <h2>pagination</h2>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#" class="active">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+            
+        </ul>
+    </body>
+</html>

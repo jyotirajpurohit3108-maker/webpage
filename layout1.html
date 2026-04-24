@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example of Basic HTML Webpage Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>W3Schools</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <section>
+                <h2>About Us</h2>
+                <p>A web page (or webpage) is a Web document that is accessed in a web browser.
+                </p>
+            </section>
+            <section>
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                    <li>Software Training</li>
+                    <li>SEO</li>
+                </ul>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Latest Updates</h2>
+            <ul>
+                <li>New Course Launched</li>
+                <li>Upcoming Webinar</li>
+                <li>Technical Blog Post</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+</p>
+    </footer>
+</body>
+
+</html>

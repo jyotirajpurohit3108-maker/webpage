@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            max-width: 100dvw;
+            overflow-x: hidden;
+        }
+        button{
+           width: 50px; 
+           border: none;
+           background: transparent;
+        }
+        .demo{
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            max-width: 100%;
+        }
+        ul li{
+            list-style: none;
+            font-size: 20px;
+            line-height: 25px;
+        
+        }
+        ul{
+            padding-top: 60px;
+
+
+        }
+        aside{
+            height: 100dvh;
+            box-shadow: 0 0 5px #aaa;
+            max-width: 80vw;
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 300px;
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.444);
+            backdrop-filter: blur(10px);
+            translate: 100%;
+            transition: 0.4s;
+        }
+        nav{
+            position: relative;
+        }
+        .close{
+            top: 20px;
+            right: 20px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="demo">
+            <div>
+                <h1>logo</h1>
+
+            </div>
+            <div>
+                <button onclick="sidebarShow()">
+                    <img src="./hamburger.png">
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    <aside id="demo1">
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>About</li>
+                <li>contact</li>
+            </ul>
+            <div class="close">
+                <button onclick="sidebarHidden()">
+                    <img src="./close.png">
+                </button>
+            </div>
+        </nav>
+    </aside>
+    <script>
+        function sidebarShow()
+        {
+            document.getElementById("demo1").style.translate="0px";
+        }
+        function sidebarHidden()
+        {
+            document.getElementById("demo1").style.translate="100%";
+        }
+    </script>
+</body>
+</html>
